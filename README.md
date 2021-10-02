@@ -114,9 +114,28 @@ Initial idea before wireframe intention:
 
 #### Background Content
 
+The following images have been sourced as the html background, one requiring attribute permission and the other one created by myself, using pixlr:
+
+<table>
+<tr><th>Image requiring attributes</th><th>Own Image idea</th></tr>
+<tr><td><img src="assets/images/bg_img V1.jpg" height = "400px"><br><a href="https://www.vecteezy.com/free-vector/binary-code-background">Binary Code Background Vectors by Vecteezy</a></td><td><img src="assets/images/bg_img V2.png" height = "400px"><br>Created by myself using <a href = "https://pixlr.com/">Pixlr</a></td></tr>
+</table>
+
 #### Colour Strategy
 
 #### Typography
+
+For the heading i will use Roboto:
+
+``` font-family: 'Roboto', sans-serif;```
+
+For the body text i will use Noto Sans JP:
+
+``` font-family: 'Noto Sans JP', sans-serif;```
+
+Example text to showcase the heading and body text:
+
+<img src="assets/images/README_img/font_styles.png" width = "450px">
 
 #### Icons and Characters
 
@@ -133,6 +152,7 @@ Initial idea before wireframe intention:
 
 ### Credit
 * [Setting up contents page on README file](https://ecotrust-canada.github.io/markdown-toc/)
+* [background image](https://www.vecteezy.com/vector-art/174467-matrix-style-binary-background)
 
 ### References
 
