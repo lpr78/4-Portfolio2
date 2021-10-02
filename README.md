@@ -1,9 +1,9 @@
-# GCSE Binary Game
+# Binary Manipulation and Simplication Game
 
 ## Introduction
 * Computer Science teaching is gradually moving towards non-computer based classroom learning, with limited school based equipment availability.
 * Resulting in the lack of interactivity in the lesson, utilising technology.
-* The intention is to supply a mobile quiz solution for learners on a GCSE Computer Science Topic: Binary Manipulation
+* The intention is to supply a mobile quiz solution for learners on an A-Level/GCSE Computer Science course, focusing on the topic: Binary Manipulation and Simplication.
 * The web based application can be accessible via mobile devices or limited mobile device technology accessible to the teacher
 * The game element can be utilised as a starter or plenary activity, testing knowledge at the end of the topic delivery
 * The game itself will be a full graphical user interface which would benefit with a time-based element to mimic the examination time
@@ -83,15 +83,21 @@
 <table>
 <tr><th>User story</th><th>Success Criteria</th><th>Implementation plan</th></tr>
 <tr><td>As a user i want an easily accessible game that supports my learning of binary manipulation and simplication</td><td>The user should be able to access a game through with clear labelled navigation and instruction support for advice and guidance on starting the game</td><td>Simple navigational buttons, with limited screen text.  Modals can also assist with message instructions without navigating away from the game itself.</td></tr>
-<tr><td>As a user i want to be able to answer a series of questions and know how successful during my learning journey</td><td></td><td></td></tr>
-<tr><td>As a user i want to see exam style questions that compliment actual exam style questions</td><td></td><td></td></tr>
-<tr><td>As a user i want to be able to be able to play the game inside and outside a classroom environment via a mobile device</td><td></td><td></td></tr>
-<tr><td>As a user i would like the game to accessible via a touchscreen, to reduce keyboard functionality</td><td></td><td></td></tr>
-<tr><td>As a user i would like to be able to have support with assistive technology to read questions and potential answers</td><td></td><td></td></tr>
-<tr><td>As a user i would like to minimise the amount of navigation to limited buttons</td><td></td><td></td></tr>
+<tr><td>As a user i want to be able to answer a series of questions and know how successful during my learning journey</td><td>User should be able to see attainment as they go through a series of questions to support their learning</td><td>Relevant score increments re-calculated at the end of each question that update according to the question that they are doing. </td></tr>
+<tr><td>As a user i want to see exam style questions that compliment actual exam style questions</td><td>Identify suitable exam questions and use 'similar but different' approach to be able to show misconceptions in workings that are common within the actual exam</td><td>Use multiple choice options that are plausible misconceptions with a correct answer expected to increment the total score.</td></tr>
+<tr><td>As a user i want to be able to be able to play the game inside and outside a classroom environment via a mobile device</td><td>A simple GUI that allows the user to navigate the main elements of the game</td><td>limit the number of html pages and consider the use of modals and CSS display options to limit the navigation away from the game itself.</td></tr>
+<tr><td>As a user i would like the game to accessible via a touchscreen, to reduce keyboard functionality</td><td>Simple clear navigational elements that allow the user to progress through the game and see their result at the end of the game with relevant tools to support how the answers could be achieved.  As the game has a timer the user would be expected to workout their answers which can then be cross referenced with the actual working solution</td><td>The game should be accessible on both computer screens, utilising a key board event listerner as well as relevant touch elements with clear box elements</td></tr>
+<tr><td>As a user i would like to be able to have support with assistive technology to read questions and potential answers</td><td>Allow screen reading technology on elements associated with the game and relevant accessibility feature to ensure high contrast functionality</td><td>Apply a setting feature that triggers accessibility features, such as high contrast and utilise relevant aria HTML elements within the actual game itself to allow greater functionality for those users that require assistive technology.</td></tr>
+<tr><td>As a user i would like to minimise the amount of navigation to limited buttons</td><td>Reduce the number of user touches/clicks to navigate throughout the game</td><td>Ensure automated features navigate to relevant questions within the user having to click (NEXT) to the appropriate question. </td></tr>
 </table>
 
 ### Opportunities
+* Provide a gaming environment that utilises colour schemes and contrast that are appropriate to the core audience (14 to 18 year olds)
+* Elements within the game should be a size that compliment both mobile and computer displays
+* Consider animated elements on buttons (mostly mouseover events) that help the user locate their intended options within the multiple choice game
+* Use a timer to reduce the amount of time for each question to allow a timely completion of the game itself, to support the teacher to use as a 10 minute starter or plenary activity
+* Consider external storage of game questions that are random (to reduce copying their peers) and stores game scores that can easily be retrieved when re-calling the content of the game.
+* Supportive material utilising innerHTML elements that allow the learners to see model answers relating to the questions, which they have control to see and utilise.  
 
 
 ## Skeleton Plane
