@@ -121,7 +121,20 @@ The following images have been sourced as the html background, one requiring att
 <tr><td><img src="assets/images/bg_img V1.jpg" height = "400px"><br><a href="https://www.vecteezy.com/free-vector/binary-code-background">Binary Code Background Vectors by Vecteezy</a></td><td><img src="assets/images/bg_img V2.png" height = "400px"><br>Created by myself using <a href = "https://pixlr.com/">Pixlr</a></td></tr>
 </table>
 
+I decided to go with the image that i created to create the landing page, as this had a higher contrast between both the foreground and background elements
+
+
+
+
 #### Colour Strategy
+* With binary having limited values of 1 or 0, i decided to utilise this within the colour them, focusing on the grayscale approach.  
+* To ensure a high contrast and visibility, i will utilise the light on dark approach, to ensure that the user can see the content. 
+
+<img src="assets/images/README_img/colour_contrast_check.png" width="550px">
+
+* I have demonstrated how the contrast has been considered in the landing page test below:
+
+<img src="assets/images/README_img/land_page_choice.png" width="550px">
 
 #### Typography
 
