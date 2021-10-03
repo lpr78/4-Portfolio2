@@ -1,13 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@500&display=swap');
 
+* {
+    color: var(--text);
+    font-size: 2rem;
+
+}
+
 html {
     background: url('/assets/images/bg_img\ V2.png') center center / cover no-repeat fixed;
 }
 
-h1,h2,h3 {
+:root {
+    --border: rgba(146, 141, 140, 1);
+    --text: rgba(19, 18, 18, 1);
+    --shadow: rgba(146, 141, 140, 1);
+    --box: rgba(250, 247, 247, 0.8);
+}
+
+h1,
+h2,
+h3 {
     font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
 }
 
 p {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif
+}
+
+#footer_container {
+    position: absolute;
+    padding-bottom: 25px;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
+}
+#footer_container > p{
+    color:whitesmoke;
+    position:relative;  
+    font-size: 40%;
+}
+
+.binary_game_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.title_container {
+    width: min(800px, 90%);
+    max-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1% auto;
+    border: var(--border) solid 5px;
+    background-color: var(--box);
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.title_container>h1 {
+    text-align: center;
+    font-size: 100%;
+    color: var(--text);
+    text-shadow: 0 5px 5px var(--shadow);
+    padding: 0 20px;
+}
+
+.icon {
+    font-size: 70%;
+}
+
+.main_container {
+    width: 90%;
+    max-width: 900px;
+    height: 60vh;
+    max-height: 900px;
+    z-index: 2;
+    margin-top: 5%;
+
+}
+
+.main_menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+}
+
+.main_button {
+    width: clamp(150px, 80%, 500px);
+    height: 22%;
+    border-radius: 15px;
+    border: 5px solid var(--border);
+    background-color: var(--box);
+    text-shadow: 0 5px 5px var(--shadow);
+    color: var(--text);
+    text-align: center;
+    cursor: pointer;
+    padding: 0 20px;
+
+
+}
+
+/*ipad media element adjustments - max width: 768px*/
+
+
+/*iphone media element adjustments - max width: 320px*/
+@media screen and (max-width: 320px) {
+    .title_container>h1 {
+        font-size: 50%;
+    }
+
+    .title_container>i {
+        display: none;
+    }
+
+    .main_button {
+        font-size: 50%;
+    }
+    
 }
