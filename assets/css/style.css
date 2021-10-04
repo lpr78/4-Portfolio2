@@ -15,6 +15,7 @@ html {
     --text: rgba(19, 18, 18, 1);
     --shadow: rgba(146, 141, 140, 1);
     --box: rgba(250, 247, 247, 0.8);
+    background: url('/assets/images/bg_img_V2.png') center center / cover no-repeat fixed;
 }
 
 h1,
@@ -54,7 +55,6 @@ p {
     height: 100vh;
     align-items: center;
     overflow: hidden;
-
 }
 
 .title_container {
@@ -104,6 +104,7 @@ p {
 }
 
 .main_button {
+    z-index: 2;
     width: clamp(150px, 80%, 500px);
     height: 22%;
     border-radius: 15px;
@@ -114,10 +115,63 @@ p {
     text-align: center;
     cursor: pointer;
     padding: 0 20px;
-
-
 }
 
+#enter_name {
+    width: clamp(140px, 80%, 500px);
+    height: 22%;
+    border-radius: 15px;
+    border: 5px solid var(--border);
+    background-color: var(--box);
+    text-shadow: 0 5px 5px var(--shadow);
+    color: var(--text);
+    text-align: center;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+/*Modal Practice section */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 250px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: var(--box);
+    z-index: 1; /* Sit on top */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    font-size:50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
 /*ipad media element adjustments - max width: 768px*/
 
 

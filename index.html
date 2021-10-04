@@ -16,22 +16,45 @@
 </head>
 
 <body>
-    
-    
+
+
     <main class="binary_game_container">
-        <div class = "title_container"> <h1></i>Binary Revision Quiz <i class="far fa-plus-square icon"></i><i class="far fa-minus-square icon"></i></h1></div>
-        <div class = "main_container">
-            <div class = "main_menu">
-            <button class = "main_button">Play</button>
-            <button class = "main_button">Instructions</button>
-            <button class = "main_button">High Score</button>
+        <div class="title_container">
+            <h1></i>Binary Revision Quiz <i class="far fa-plus-square icon"></i><i class="far fa-minus-square icon"></i>
+            </h1>
+        </div>
+        <div class="main_container">
+            <div class="main_menu">
+                <label for="enter_name"></label>
+                <input type="text" name="enter_name" id="enter_name" placeholder="Enter Name: ">
+                <button class="main_button">Play</button>
+                <button class="main_button" id="btn_Instruction" onclick="fn_instructions()">Instructions</button>
+                <button class="main_button">High Score</button>
             </div>
         </div>
     </main>
+    <div>
 
-    <footer id="footer_container"><p>&#xa9; MyQED</p></footer>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
 
-    <script src="assets/js/script.js"></script>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modal_additions">
+                    <p>Testing text</p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <footer id="footer_container">
+            <p>&#xa9; MyQED</p>
+        </footer>
+
+        <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>

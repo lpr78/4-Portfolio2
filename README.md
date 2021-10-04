@@ -123,9 +123,6 @@ The following images have been sourced as the html background, one requiring att
 
 I decided to go with the image that i created to create the landing page, as this had a higher contrast between both the foreground and background elements
 
-
-
-
 #### Colour Strategy
 * With binary having limited values of 1 or 0, i decided to utilise this within the colour them, focusing on the grayscale approach.  
 * To ensure a high contrast and visibility, i will utilise the light on dark approach, to ensure that the user can see the content. 
