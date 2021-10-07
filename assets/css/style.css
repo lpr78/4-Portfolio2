@@ -1,192 +1,200 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@500&display=swap');
 
 * {
-    color: var(--text);
-    font-size: 2rem;
-
-}
-
-html {
-    background: url('/assets/images/bg_img_V2.png') center center / cover no-repeat fixed;
+  font-family: 'Noto Sans JP', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #faf7f7;
 }
 
 :root {
-    --border: rgba(146, 141, 140, 1);
-    --text: rgba(19, 18, 18, 1);
-    --shadow: rgba(146, 141, 140, 1);
-    --box: rgba(250, 247, 247, 0.8);
-    background: url('/assets/images/bg_img_V2.png') center center / cover no-repeat fixed;
+  font-size: 70%;
+  background-color: black;
 }
+html{background: url('/assets/images/bg_img_V2.png') center center / cover no-repeat fixed;}
 
+/*General settings for main tags*/
 h1,
 h2,
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 5.4rem;
+  margin-bottom: 5rem;
+}
+
+h1>span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
 h3 {
-    font-family: 'Roboto', sans-serif;
-    color: whitesmoke;
+  font-size: 2.8rem;
+  font-weight: 500;
 }
 
-p {
-    font-family: 'Noto Sans JP', sans-serif
+
+/* Container information to use across all webpages */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-#footer_container {
-    position: absolute;
-    padding-bottom: 25px;
-  bottom: 0;
+.container>* {
   width: 100%;
-  height: 2.5rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
   text-align: center;
 }
-#footer_container > p{
-    color:whitesmoke;
-    position:relative;  
-    font-size: 40%;
+
+.hidden {
+  display: none;
 }
 
-.binary_game_container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: 100vh;
-    align-items: center;
-    overflow: hidden;
+/* Navigation Button settings */
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #faf7f7;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #faf7f7;
+  background-color: rgba(95, 95, 95, 0.5);
 }
 
-.title_container {
-    width: min(800px, 90%);
-    max-height: 15vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1% auto;
-    border: var(--border) solid 5px;
-    background-color: var(--box);
-    border-radius: 10px;
-    padding: 5px 5px;
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1rem 0 #928d8c;
 }
 
-.title_container>h1 {
-    text-align: center;
-    font-size: 100%;
-    color: var(--text);
-    text-shadow: 0 5px 5px var(--shadow);
-    padding: 0 20px;
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
 }
 
-.icon {
-    font-size: 70%;
+/*Any form with a screen*/
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.main_container {
-    width: 90%;
-    max-width: 900px;
-    height: 60vh;
-    max-height: 900px;
-    z-index: 2;
-    margin-top: 5%;
-
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(250, 247, 247, 0.5);
+  color:rgba(95, 95, 95, 1)
 }
 
-.main_menu {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-
+input::placeholder {
+  color: #928d8c;
 }
 
-.main_button {
-    z-index: 2;
-    width: clamp(150px, 80%, 500px);
-    height: 22%;
-    border-radius: 15px;
-    border: 5px solid var(--border);
-    background-color: var(--box);
-    text-shadow: 0 5px 5px var(--shadow);
-    color: var(--text);
-    text-align: center;
-    cursor: pointer;
-    padding: 0 20px;
+#footer-container {
+  clear: top;
 }
 
-#enter_name {
-    width: clamp(140px, 80%, 500px);
-    height: 22%;
-    border-radius: 15px;
-    border: 5px solid var(--border);
-    background-color: var(--box);
-    text-shadow: 0 5px 5px var(--shadow);
-    color: var(--text);
-    text-align: center;
-    cursor: pointer;
-    padding: 0 20px;
+/*Game Page Styles*/
+
+#question {font-size:2.6rem;}
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgba(250,247,247, 0.5);
+  background-color: whitesmoke;
 }
 
-/*Modal Practice section */
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 250px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: var(--box);
-    z-index: 1; /* Sit on top */
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    font-size:50%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-/*ipad media element adjustments - max width: 768px*/
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  color: black;
+  background-color: rgba(95, 95, 95, 0.5);
+}
 
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+  color: black;
+  background-color: rgba(250, 247, 247, 0.5);
+}
 
-/*iphone media element adjustments - max width: 320px*/
-@media screen and (max-width: 320px) {
-    .title_container>h1 {
-        font-size: 50%;
-    }
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(250,247,247, 0.5);
+}
 
-    .title_container>i {
-        display: none;
-    }
+.correct {
+  background: #28a745;
+}
+.incorrect {
+  background: #dc3545;
+}
 
-    .main_button {
-        font-size: 50%;
-    }
-    
+/*Hud = Heads up display*/
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #FAF7F7;
+  margin-top:1.75rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #FAF7F7;
+  width:0%;
 }

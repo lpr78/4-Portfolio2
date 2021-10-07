@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,26 +11,33 @@
     <meta name="author" content="Luke Price">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/cd2a226592.js" crossorigin="anonymous"></script>
-    <title>Binary Revision Quiz</title>
-</head>
-
-<body>
+    <title>Binary Revision Quiz | Congratulations</title>
+  </head>
+  <body>
     <div class="container">
-        <div id="home" class="flex-center flex-column">
-            <h1>Binary Game</h1>
-            <a href="#" class="btn">Instructions</a>
-            <a href="/game.html" class="btn">Play</a>
-            <a href="/highscore.html" class="btn">High Scores</a>
-        </div>
+      <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore">22</h1>
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username: "
+          />
+          <button
+            type="submit"
+            class="btn"
+            id="saveScoreBtn"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Save
+          </button>
+        </form>
+        <a href="/game.html" class="btn">Play Again</a>
+        <a href="/index.html" class="btn">Go Home</a>
+      </div>
     </div>
-    <div id="footer-container">
-        <p>&#xa9; MyQED</p>
-    </div>
-
-    <footer></footer>
-</body>
-
-<!-- JavaScript / jquery script => modal -->
-<script src="assets/js/script.js"></script>
-
+  </body>
+  <script src="/assets/js/script.js"></script>
 </html>

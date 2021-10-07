@@ -1,0 +1,163 @@
+[
+    {
+      "question": "Perform a logical left shift of 2 places on the following binary value: 01010010",
+      "choice1": "01001001",
+      "choice2": "01001000",
+      "choice3": "10100100",
+      "choice4": "00100100",
+      "answer": 2
+    },
+    {
+      "question": "Represent the denary value: -54 as binary using twos complement",
+      "choice1": "10111010",
+      "choice2": "00110110",
+      "choice3": "10111010",
+      "choice4": "11001010",
+      "answer": 4
+    },
+    {
+      "question": "Simplify the following expression: D + C.D.B",
+      "choice1": "D",
+      "choice2": "D+D.(C.B)",
+      "choice3": "D+D",
+      "choice4": "D.D",
+      "answer": 1
+    },
+    {
+        "question": "Simplify the following expression: A.A + A.1 + B.!B",
+        "choice1": "A.A+A.1",
+        "choice2": "A.A+A",
+        "choice3": "A.B",
+        "choice4": "A",
+        "answer": 4
+      },
+      {
+        "question": "Simplify the following expression: !!(B.!C) + !C",
+        "choice1": "!C.C",
+        "choice2": "B.!C",
+        "choice3": "!C",
+        "choice4": "C",
+        "answer": 3
+      },
+      {
+        "question": "Simplify the following expression: !!(!B + !B.!B)",
+        "choice1": "!B",
+        "choice2": "B",
+        "choice3": "!B.!B",
+        "choice4": "B.!B",
+        "answer": 1
+      },
+      {
+        "question": "Using Karnaugh map, simplify the following expression: CC + !(!1.!B + !D)",
+        "choice1": "CC + BD",
+        "choice2": "C + !BD",
+        "choice3": "C + BD",
+        "choice4": "C + !B!D",
+        "answer": 3
+      },
+      {
+        "question": "Using Karnaugh map, simplify the following expression: (!B.!D + !A.!D).A",
+        "choice1": "A.!B + A.!D",
+        "choice2": "A.B + A.D",
+        "choice3": "A.(!B + !D + !A)",
+        "choice4": "A + !B.A + !D",
+        "answer": 1
+      },
+      {
+        "question": "Use binary subtraction on: 01001100 - 00110010",
+        "choice1": "11011010",
+        "choice2": "01101110",
+        "choice3": "00011010",
+        "choice4": "00110110",
+        "answer": 3
+      },
+      {
+        "question": "Convert the following number: -43 into an 8 bit binary value using twos complement",
+        "choice1": "10110101",
+        "choice2": "11010101",
+        "choice3": "11010110",
+        "choice4": "11110101",
+        "answer": 2
+      },
+      {
+        "question": "Convert the following number: -89 into a twos complement 8 bit binary value",
+        "choice1": "10100111",
+        "choice2": "10100011",
+        "choice3": "10100101",
+        "choice4": "10110111",
+        "answer": 1
+      },
+      {
+        "question": "Calculate the subtraction of the two binary values: 11000011 - 01110010",
+        "choice1": "01110010",
+        "choice2": "10110011",
+        "choice3": "01011001",
+        "choice4": "01010001",
+        "answer": 4
+      },
+      {
+        "question": "What is the binary value of the following calculation: 180 - 255 as an 8 bit binary value",
+        "choice1": "01001011",
+        "choice2": "-01001011",
+        "choice3": "-01001010",
+        "choice4": "01001010",
+        "answer": 2
+      },
+      {
+        "question": "Using Karnaugh map, simplify the following expression: (A.B) + (!A.B) + (!C.!D)",
+        "choice1": "A + B(!A.!D)",
+        "choice2": "B + !C",
+        "choice3": "B + (!C.!D)",
+        "choice4": "B + (C.D)",
+        "answer": 3
+      },
+      {
+        "question": "Complete the following logic operation: (1010 XOR 1100) XOR 1100",
+        "choice1": "1010",
+        "choice2": "0101",
+        "choice3": "0011",
+        "choice4": "1001",
+        "answer": 1
+      },
+      {
+        "question": "Complete the following logic operation: 10101 OR 01011",
+        "choice1": "11110",
+        "choice2": "11111",
+        "choice3": "00001",
+        "choice4": "11010",
+        "answer": 2
+      },
+      {
+        "question": "Complete the following logic operation: 10010 AND 11111",
+        "choice1": "00000",
+        "choice2": "01101",
+        "choice3": "10010",
+        "choice4": "01001",
+        "answer": 2
+      },
+      {
+        "question": "Complete the following logic operation: 01101 XOR 00000",
+        "choice1": "00000",
+        "choice2": "01001",
+        "choice3": "10010",
+        "choice4": "01101",
+        "answer": 4
+      },
+      {
+        "question": "Solve the value of Z on the following logic operation: Z XOR 01100 = 10110",
+        "choice1": "01001",
+        "choice2": "10110",
+        "choice3": "11001",
+        "choice4": "11010",
+        "answer": 4
+      },
+      {
+        "question": "What is the binary value of 170 - 240",
+        "choice1": "0100010",
+        "choice2": "-0100010",
+        "choice3": "-0110010",
+        "choice4": "0110010",
+        "answer": 2
+      }
+  ]
+  
