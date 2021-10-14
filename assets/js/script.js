@@ -25,8 +25,8 @@ fetch('assets/js/questions.json')
     });
 
 //CONSTANTS
-const CORRECT_BONUS = 1;
-const MAX_QUESTIONS = 20;
+const CORRECT_BONUS = 2;
+const MAX_QUESTIONS = 3;
 
 startGame = () => {
     questionCounter = 0;
@@ -117,6 +117,7 @@ saveHighScore = (e) => {
   highScores.splice(5); //Keeps maximum splice 
   localStorage.setItem('highScores',JSON.stringify(highScores));
   window.location.assign('/index.html');
+
 };
 
 //Highscore page JS
@@ -126,5 +127,3 @@ const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 highScoresList.innerHTML = highScores.map(score => {
     return `<li class = "high-score">${score.name}:&emsp;${score.score}</li>`;
 }).join("");
-
-

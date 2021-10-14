@@ -155,6 +155,8 @@ Example text to showcase the heading and body text:
 ## Future Enhancements
 
 ## Testing Strategy
+* Refer to the following link to see a diarised approach to testing
+* [Testing Link](TESTING.md)
 
 ## Deployment Strategy
 
@@ -163,7 +165,12 @@ Example text to showcase the heading and body text:
 ### Credit
 * [Setting up contents page on README file](https://ecotrust-canada.github.io/markdown-toc/)
 * [background image](https://www.vecteezy.com/vector-art/174467-matrix-style-binary-background)
-
+* [bootstrap modal](https://getbootstrap.com/docs/4.0/components/modal/)
+* [alternative modal considerations](https://sabe.io/tutorials/how-to-create-modal-popup-box)
+* [consideration towards a game timer](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz)
+* [carousel idea](https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9)
+* [computer science questions inspired by this textbook](https://www.pgonline.co.uk/resources/computer-science/a-level-ocr/ocr-a-level-textbook/)
+* Photoshop used to create background image for the quiz game
 ### References
 
 
