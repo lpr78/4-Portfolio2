@@ -125,7 +125,7 @@ The following images have been sourced as the html background, one requiring att
 <tr><td><img src="assets/images/bg_img_V1.jpg" height = "400px"><br><a href="https://www.vecteezy.com/free-vector/binary-code-background">Binary Code Background Vectors by Vecteezy</a></td><td><img src="assets/images/bg_img_V2.png" height = "400px"><br>Created by myself using <a href = "https://pixlr.com/">Pixlr</a></td></tr>
 </table>
 
-I decided to go with the image that i created to create the landing page, as this had a higher contrast between both the foreground and background elements
+I decided to go with the image that i created for the html pages, as this had a higher contrast between both the foreground and background elements, to support accessibiity requirements.  
 
 #### Colour Strategy
 * With binary having limited values of 1 or 0, i decided to utilise this within the colour them, focusing on the grayscale approach.  
@@ -133,9 +133,11 @@ I decided to go with the image that i created to create the landing page, as thi
 
 <img src="assets/images/README_img/colour_contrast_check.png" width="550px">
 
-* I have demonstrated how the contrast has been considered in the landing page test below:
+* I have showcased below what the end result of the colour theory exercise could be visualised as on the landing page test:
 
 <img src="assets/images/README_img/land_page_choice.png" width="550px">
+
+The benefit of this approach is to ascertain how the colour theory can be utilised and i am happy with the contrast element.  Further enhancements will be made to Version 1 designs to ensure that the contrast scores from the previous project exceeded.
 
 #### Typography
 

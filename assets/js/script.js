@@ -1,4 +1,4 @@
-//Code element for the game.html page
+//GAME PAGE JS SCRIPT
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progressText');
@@ -26,7 +26,7 @@ fetch('assets/js/questions.json')
 
 //CONSTANTS
 const CORRECT_BONUS = 2;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 20;
 
 startGame = () => {
     questionCounter = 0;
@@ -88,42 +88,12 @@ incrementScore = (num) => {
     scoreText.innerText = score;
 };
 
-//End page JS Script
-const username = document.getElementById("username");
-const saveScoreBtn = document.getElementById("saveScoreBtn");
 
-const finalScore = document.getElementById("finalScore");
-
-const mostRecentScore = localStorage.getItem("mostRecentScore");
-finalScore.innerText = mostRecentScore;
-
-const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-
-const MAX_HIGH_SCORE = 5;
-
-username.addEventListener("keyup", () => {
-  saveScoreBtn.disabled = !username.value;
-});
-
-saveHighScore = (e) => {
-  e.preventDefault();
-
-  const score = {
-    score: mostRecentScore,
-    name: username.value,
-  };
-  highScores.push(score);
-  highScores.sort((a, b) => b.score - a.score);
-  highScores.splice(5); //Keeps maximum splice 
-  localStorage.setItem('highScores',JSON.stringify(highScores));
-  window.location.assign('/index.html');
-
-};
-
-//Highscore page JS
+//HIGH SCORE HTML PAGE JS CODE
 const highScoresList = document.getElementById('highScoresList');
 const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
 highScoresList.innerHTML = highScores.map(score => {
     return `<li class = "high-score">${score.name}:&emsp;${score.score}</li>`;
 }).join("");
+
