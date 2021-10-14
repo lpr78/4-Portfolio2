@@ -58,7 +58,7 @@ h3 {
   padding: 2rem;
 }
 
-.container>* {
+.container > * {
   width: 100%;
 }
 
@@ -85,7 +85,8 @@ h3 {
 }
 
 /* Navigation Button settings */
-.btn {
+.btn,
+button {
   font-size: 1.8rem;
   padding: 1rem 0;
   width: 20rem;
@@ -100,6 +101,7 @@ h3 {
 .btn:hover {
   cursor: pointer;
   box-shadow: 0 0.4rem 1rem 0 #928d8c;
+  color: white;
 }
 
 .btn[disabled]:hover {
@@ -123,7 +125,7 @@ input {
   font-size: 1.8rem;
   border: none;
   box-shadow: 0 0.1rem 1.4rem 0 rgba(250, 247, 247, 0.5);
-  color:rgba(95, 95, 95, 1)
+  color: rgba(95, 95, 95, 1);
 }
 
 input::placeholder {
@@ -136,13 +138,15 @@ input::placeholder {
 
 /*Game Page Styles*/
 
-#question {font-size:2.6rem;}
+#question {
+  font-size: 2.6rem;
+}
 .choice-container {
   display: flex;
   margin-bottom: 0.5rem;
   width: 100%;
   font-size: 1.8rem;
-  border: 0.1rem solid rgba(250,247,247, 0.5);
+  border: 0.1rem solid rgba(95, 95, 95, 1);
   background-color: whitesmoke;
 }
 
@@ -161,7 +165,7 @@ input::placeholder {
 
 .choice-container:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(250,247,247, 0.5);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(250, 247, 247, 0.5);
 }
 
 .correct {
@@ -189,12 +193,47 @@ input::placeholder {
 #progressBar {
   width: 20rem;
   height: 4rem;
-  border: 0.3rem solid #FAF7F7;
-  margin-top:1.75rem;
+  border: 0.4rem solid #faf7f7;
+  margin-top: 1.75rem;
 }
 
 #progressBarFull {
   height: 3.4rem;
-  background-color: #FAF7F7;
-  width:0%;
+  background-color: #faf7f7;
+  width: 0%;
+}
+
+/*High Score*/
+#highScoresList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 4rem;
+}
+
+.high-score {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+
+.high-score:hover {
+  transform: scale(1.25);
+}
+
+.modal-body > h4 {
+  font-size: 2.4rem;
+}
+.modal-body > ul,
+p {
+  font-size: 1.8rem;
+}
+
+#play_link {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+#play_link:hover {
+  color: #928d8c;
 }
