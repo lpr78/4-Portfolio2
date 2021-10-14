@@ -1,35 +1,21 @@
-(Back to README)[README.md]
+[Back to README](README.md)
 
 ## Version 1: Binary Game
 ### Date: 14/10/21
 * The following application of knowledge has been demonstrated based on the resources and inspiriation (as shown in the credit section).
-* Version 1 was built using Visual Studio Code (offline application) - utilised while working away for a couple of weeks and being away from main computer.  
+* Version 1 was built using [Visual Studio Code](https://code.visualstudio.com/) - utilised while working away for a couple of weeks and being away from main computer.  
 * Initial testing on varying responses conclude the base files are supporting of most success criteria.
 
 ### Images of Version 1
-Initial landing page element:
 
-<img src='assets/images/TESTING_img/Version_1/v1_1.png' width="300px">
-
-Modal instructions when Instruction button pressed: 
-
-<img src='assets/images/TESTING_img/Version_1/v1_2.png' width="300px">
-
-Game opens when the Play button pressed on Landing page:
-
-<img src='assets/images/TESTING_img/Version_1/v1_3.png' width="300px">
-
-Showing progress bar complete with a score of 11/20: 
-
-<img src='assets/images/TESTING_img/Version_1/v1_4.png' width="300px">
-
-Once game completes it moves to a screen that allows the user to enter their name and brings their score across from the game:
-
-<img src='assets/images/TESTING_img/Version_1/v1_5.png' width="300px">
-
-Showing the game result of Test47 in the top 5 scores:
-
-<img src='assets/images/TESTING_img/Version_1/v1_6.png' width="300px">
+<table>
+<tr><td>Initial landing page element:</td><td>Modal instructions when Instruction button pressed: </td></tr>
+<tr><td><img src='assets/images/TESTING_img/Version_1/v1_1.png' width="300px"></td><td><img src='assets/images/TESTING_img/Version_1/v1_2.png' width="300px"></td></tr>
+<tr><td>Game opens when the Play button pressed on Landing page:</td><td>Showing progress bar complete with a score of 11/20: </td></tr>
+<tr><td><img src='assets/images/TESTING_img/Version_1/v1_3.png' width="300px"></td><td><img src='assets/images/TESTING_img/Version_1/v1_4.png' width="300px"></td></tr>
+<tr><td>Once game completes it moves to a screen that allows the user <br>to enter their name and brings their score across from the game:</td><td>Showing the game result of Test47 in the top 5 scores:</td></tr>
+<tr><td><img src='assets/images/TESTING_img/Version_1/v1_5.png' width="300px"></td><td><img src='assets/images/TESTING_img/Version_1/v1_6.png' width="300px"></td></tr>
+</table>
 
 Carousel showing exemplar responses that the leaner could use for each question that they have answered:
 
@@ -43,3 +29,5 @@ Carousel showing exemplar responses that the leaner could use for each question 
 * Time element to be between progress bar and score that automatically changes question after 2 minutes
 * change correct score constant to 2 marks, not 1
 * Review visualisation diagrams when back home
+
+[Back to README](README.md)

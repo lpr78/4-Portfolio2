@@ -108,6 +108,10 @@ Initial idea before wireframe intention:
 
 <img src="assets/images/README_img/Initial idea_pre-wireframe.png" width = "550px">
 
+Mobile application wireframe design using [Balsamiq](https://balsamiq.com/) that simplifies the construction and intended route element between each of the quiz elements: 
+
+<img src="assets/images/README_img/mobile_wireframe_map.png">
+
 ## Surface Plane
 
 ### Designs
@@ -118,7 +122,7 @@ The following images have been sourced as the html background, one requiring att
 
 <table>
 <tr><th>Image requiring attributes</th><th>Own Image idea</th></tr>
-<tr><td><img src="assets/images/bg_img V1.jpg" height = "400px"><br><a href="https://www.vecteezy.com/free-vector/binary-code-background">Binary Code Background Vectors by Vecteezy</a></td><td><img src="assets/images/bg_img V2.png" height = "400px"><br>Created by myself using <a href = "https://pixlr.com/">Pixlr</a></td></tr>
+<tr><td><img src="assets/images/bg_img_V1.jpg" height = "400px"><br><a href="https://www.vecteezy.com/free-vector/binary-code-background">Binary Code Background Vectors by Vecteezy</a></td><td><img src="assets/images/bg_img_V2.png" height = "400px"><br>Created by myself using <a href = "https://pixlr.com/">Pixlr</a></td></tr>
 </table>
 
 I decided to go with the image that i created to create the landing page, as this had a higher contrast between both the foreground and background elements
@@ -170,6 +174,7 @@ Example text to showcase the heading and body text:
 * [consideration towards a game timer](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz)
 * [carousel idea](https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9)
 * [computer science questions inspired by this textbook](https://www.pgonline.co.uk/resources/computer-science/a-level-ocr/ocr-a-level-textbook/)
+* [offline editor Visual Studio Code used while working away](https://code.visualstudio.com/)
 * Photoshop used to create background image for the quiz game
 ### References
 
