@@ -21,6 +21,21 @@ Carousel showing exemplar responses that the leaner could use for each question 
 
 <img src='assets/images/TESTING_img/Version_1/v1_7.png' width="300px">
 
+### Lighthouse check
+Landing page:
+<img src = "assets/images/TESTING_img/Version_1/lhouse_home_151021.png" width = "350px">
+
+Play:
+
+End:
+
+High Score: 
+<img src = "assets/images/TESTING_img/Version_1/lhouse_hscore_151021.png" width = "350px">
+
+Revision: 
+<img src = "assets/images/TESTING_img/Version_1/lhouse_revision_151021.png" width = "350px">
+
+
 ### Further Considerations for Version 2:
 * Background image no longer on display when utilising Bootstrap Modal.  Need to remove Boostrap to see background image.  Consideration to using JS as part of the modal for Instruction button may be a viable option.
 * Add modal on revision page to relevant revision videos to further support learning of the topics past the exemplar answers and processes (especially where the boolean algebra rules are considered)
@@ -29,5 +44,7 @@ Carousel showing exemplar responses that the leaner could use for each question 
 * Time element to be between progress bar and score that automatically changes question after 2 minutes
 * change correct score constant to 2 marks, not 1
 * Review visualisation diagrams when back home
+* Need to add meta data to the head of each page to improve SEO score > 90%
+* Ensure all images have a width and height set in CSS and alt tags
 
 [Back to README](README.md)
