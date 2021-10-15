@@ -175,6 +175,7 @@ Example text to showcase the heading and body text:
 * [alternative modal considerations](https://sabe.io/tutorials/how-to-create-modal-popup-box)
 * [consideration towards a game timer](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz)
 * [carousel idea](https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9)
+* [Further carousel ideas](https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9)
 * [computer science questions inspired by this textbook](https://www.pgonline.co.uk/resources/computer-science/a-level-ocr/ocr-a-level-textbook/)
 * [offline editor Visual Studio Code used while working away](https://code.visualstudio.com/)
 * Photoshop used to create background image for the quiz game

@@ -1,6 +1,3 @@
-//web link as a reference to add to README: 
-//link: https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
-
 !(function(d){
     // Variables to target our base class,  get carousel items, count how many carousel items there are, set the slide to 0 (which is the number that tells us the frame we're on), and set motion to true which disables interactivity.
     var itemClassName = "carousel__photo";
