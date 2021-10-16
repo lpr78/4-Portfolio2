@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Congratulations!</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div id="end" class="flex-center flex-column">
-        <h1 id="finalScore">5</h1>
-        <form>
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="username: "
-          />
-          <button
-            type="submit"
-            class="btn"
-            id="saveScoreBtn"
-            onclick="saveHighScore(event)"
-            disabled
-          >
-            Save
-          </button>
-        </form>
-        <a href="/game.html" class="btn">Play Again</a>
-        <a href="/index.html" class="btn">Go Home</a>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Congratulations!</title>
+  <meta name="description"
+    content="Binary Quiz to support learners complete binary calculations as part of the GCSE and A-Level Computer Science qualification">
+  <meta name="keywords"
+    content="binary, subtraction, addition, bitwise manipulation, karnaugh map, boolean algebra, boolean simplication, computer science, GCSE, A-Level">
+  <meta name="author" content="Luke Price">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="end" class="flex-center flex-column">
+      <h1 id="finalScore">5</h1>
+      <form>
+        <input type="text" name="username" id="username" placeholder="username: " />
+        <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>
+          Save
+        </button>
+      </form>
+      <a href="/game.html" class="btn">Play Again</a>
+      <a href="/index.html" class="btn">Go Home</a>
     </div>
-  </body>
-  <script src="assets/js/end.js"></script>
+  </div>
+</body>
+<script src="assets/js/end.js"></script>
+
 </html>

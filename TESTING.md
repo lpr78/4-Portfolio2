@@ -23,21 +23,28 @@ Carousel showing exemplar responses that the leaner could use for each question 
 
 ### Lighthouse check
 Landing page:
+
 <img src = "assets/images/TESTING_img/Version_1/lhouse_home_151021.png" width = "350px">
 
 Play:
 
+<img src = "assets/images/TESTING_img/Version_1/lhouse_play_151021.png" width = "350px">
+
 End:
 
+<img src = "assets/images/TESTING_img/Version_1/lhouse_end_151021.png" width = "350px">
+
 High Score: 
+
 <img src = "assets/images/TESTING_img/Version_1/lhouse_hscore_151021.png" width = "350px">
 
 Revision: 
+
 <img src = "assets/images/TESTING_img/Version_1/lhouse_revision_151021.png" width = "350px">
 
 
 ### Further Considerations for Version 2:
-* Background image no longer on display when utilising Bootstrap Modal.  Need to remove Boostrap to see background image.  Consideration to using JS as part of the modal for Instruction button may be a viable option.
+* Background image issues (sometimes displays - others not so much) when utilising Bootstrap Modal.  Need to remove Boostrap to see background image.  Consideration to using JS as part of the modal for Instruction button may be a viable option.
 * Add modal on revision page to relevant revision videos to further support learning of the topics past the exemplar answers and processes (especially where the boolean algebra rules are considered)
 * Clear Stored array element on top 5 when transferring across to GitPod from Visual Code
 * Transfer content to GitPod to ensure updated to GitHub linked (need to retrieve log in information once back home on the 21/10/2021)
@@ -45,6 +52,7 @@ Revision:
 * change correct score constant to 2 marks, not 1
 * Review visualisation diagrams when back home
 * Need to add meta data to the head of each page to improve SEO score > 90%
-* Ensure all images have a width and height set in CSS and alt tags
+* Consider image optimisation - quick way of doing this in GitPod?
+* identify why background image shows in GitPod preview, but not on GitHub
 
 [Back to README](README.md)
