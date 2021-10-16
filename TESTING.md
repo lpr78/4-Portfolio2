@@ -42,7 +42,7 @@ Revision:
 
 <img src = "assets/images/TESTING_img/Version_1/lhouse_revision_151021.png" width = "350px">
 
-### Feedback from Tester on 16/10/21
+### Feedback from Tester on 15/10/21
 The user used the Google Chrome platform utilising screen sharing and editing controls via Zoom.  The user was able to interact with the revision game and provided the following feedback:
 
 >* The writing is clear to read with the dark background colour.  
@@ -79,6 +79,21 @@ At present, I will leave the number of questions in the quiz but allow the user 
 
 ### Updated Wireframe diagram based on feedback
 
+Based on the feedback, the following additions/tweaks will be made to the quiz. 
+
 <img src="assets/images/README_img/mobile_wireframe_mapV2.png" width = "900px">
+
+## Version 2: Binary Quiz
+
+### Image Optimisation - 16/10/21
+
+Images optimised [TinyPNG](https://tinypng.com/) and replaced in carousel image folder.  
+
+<img src = "assets/images/TESTING_img/Version_1/161021_image_optimisation.png" width = "450px">
+
+Reducing the file size of the images has had a positive impact on performance, as shown below, with other elements applied, such as a meta description and addition of ALT tags. 
+
+<img src = "assets/images/TESTING_img/Version_1/lhouse_revision_161021.png" width = "350px">
+
 
 [Back to README](README.md)
