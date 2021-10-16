@@ -110,7 +110,7 @@ Initial idea before wireframe intention:
 
 Mobile application wireframe design using [Balsamiq](https://balsamiq.com/) that simplifies the construction and intended route element between each of the quiz elements: 
 
-<img src="assets/images/README_img/mobile_wireframe_map.png">
+<img src="assets/images/README_img/mobile_wireframe_map.png" width = "900px">
 
 ## Surface Plane
 
@@ -161,14 +161,35 @@ Example text to showcase the heading and body text:
 ## Future Enhancements
 
 ## Testing Strategy
-* Refer to the following link to see a diarised approach to testing
-* [Testing Link](TESTING.md)
+* Refer to the following link to see a diarised approach to testing and noterised feedback
+  * [Testing Link](TESTING.md)
+
+
+
 
 ## Deployment Strategy
+The initial web template was cloned from into my GitHub repository: 
+
+```https://github.com/Code-Institute-Org/gitpod-full-template``` 
+
+* An alternative approach to use this template in GitPod is by using the following in the Gitpod terminal: ```git clone https://github.com/Code-Institute-Org/gitpod-full-template.git```
+* You can cut ties by typing ```git remote rm origin``` into the terminal either globally or locally.
+* However, i chose to clone the template into my GitHub repository and then ported across to GitPod to further develop the code required for the Binary Quiz Game.
+* Regular commits from GitPod to GitHub were made in order to access the repository outside of the GitPod Online Application, using the following terminal commands:
+  * ```git add .```
+  * ```git commit -m "relevant comment to changes to the directories and updates"```
+  * ```git push``` which updates the relevant GitHub repository based on the GitPod changes.  
+* The landing page to the game was named ```index.html``` for deployment and routing purposes.
+* Alot of the testing of code elements were completed locally, using Visual Studio Code and there is an alternative approach to work locally and still update to Github.
+  * The following link explains how to clone and work between GitHub and Visual Studio Code on the followings: 
+    * [Link1](https://docs.microsoft.com/en-us/azure/developer/javascript/how-to/with-visual-studio-code/clone-github-repository)
+    * [Link2](https://code.visualstudio.com/docs/editor/github)
+* As my role involves working away with sometimes unpredictable wifi and data roaming, it is viable to utilise local storage for testing purposes and commit to GitHub reguarly.
+    
 
 ## Credit and References
 
-### Credit
+### References
 * [Setting up contents page on README file](https://ecotrust-canada.github.io/markdown-toc/)
 * [background image](https://www.vecteezy.com/vector-art/174467-matrix-style-binary-background)
 * [bootstrap modal](https://getbootstrap.com/docs/4.0/components/modal/)
@@ -179,6 +200,16 @@ Example text to showcase the heading and body text:
 * [computer science questions inspired by this textbook](https://www.pgonline.co.uk/resources/computer-science/a-level-ocr/ocr-a-level-textbook/)
 * [offline editor Visual Studio Code used while working away](https://code.visualstudio.com/)
 * Photoshop used to create background image for the quiz game
-### References
+* Code Institute [GitPod Full Template](https://github.com/Code-Institute-Org/gitpod-full-template)
+* Code Institute [ReadMe Guidance](https://github.com/Code-Institute-Solutions/readme-template)
+* [GitPod README Assist](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+### Credit
+* Code Institute - Support on links between GitPod and Git Hub and usability requirements
+* Code Institute - Relevant Slack Channel advice and guidance from previous students
+* Prototype 1 Reviewers: Katie Tuck and Dave Blyth on usability testing (held virtually via Zoom)
+* Prototype 2 Reviewer: Paul Kemp for final usability testing (held face to face on 28/10/21 in Bristol)
+* Relevant feedback from Brian Macharia - Mentor support in the 1 meting identifying final iterative testing requirements
+
 
 
