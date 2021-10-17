@@ -253,8 +253,10 @@ p {
 #game_controls>i {
   font-size: 2.8rem;
   padding: 4px;
+
 }
 
-#game_controls>i:hover {
+i:hover {
   color: #928d8c;
+  text-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.7);
 }
