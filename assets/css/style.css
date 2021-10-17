@@ -12,7 +12,10 @@
   font-size: 70%;
   background-color: black;
 }
-html{background: url('/assets/images/bg_img_V2.png') center center / cover no-repeat fixed;}
+
+html {
+  background: url('/assets/images/bg_img_V2.png') center center / cover no-repeat fixed;
+}
 
 /*General settings for main tags*/
 h1,
@@ -58,7 +61,7 @@ h3 {
   padding: 2rem;
 }
 
-.container > * {
+.container>* {
   width: 100%;
 }
 
@@ -141,6 +144,7 @@ input::placeholder {
 #question {
   font-size: 2.6rem;
 }
+
 .choice-container {
   display: flex;
   margin-bottom: 0.5rem;
@@ -171,6 +175,7 @@ input::placeholder {
 .correct {
   background: #28a745;
 }
+
 .incorrect {
   background: #dc3545;
 }
@@ -220,10 +225,11 @@ input::placeholder {
   transform: scale(1.25);
 }
 
-.modal-body > h4 {
+.modal-body>h4 {
   font-size: 2.4rem;
 }
-.modal-body > ul,
+
+.modal-body>ul,
 p {
   font-size: 1.8rem;
 }
@@ -235,5 +241,20 @@ p {
 }
 
 #play_link:hover {
+  color: #928d8c;
+}
+
+#game_controls {
+  text-align: right;
+  display: inline-flexbox;
+  padding-bottom: 40px;
+}
+
+#game_controls>i {
+  font-size: 2.8rem;
+  padding: 4px;
+}
+
+#game_controls>i:hover {
   color: #928d8c;
 }

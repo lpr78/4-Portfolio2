@@ -12,12 +12,15 @@
     content="binary, subtraction, addition, bitwise manipulation, karnaugh map, boolean algebra, boolean simplication, computer science, GCSE, A-Level">
   <meta name="author" content="Luke Price">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 
 <body>
-  <!--Add timer: https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz-->>
+  <!--Add timer: https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz-->
   <div class="container">
     <div id="game" class="justify-center flex-column">
+      <div id="game_controls"><i class="far fa-question-circle" id="myBtn"></i>  <i class="far fa-window-close"></i></div>
       <div id="hud">
         <div id="hud-item">
           <p id="progressText" class="hud-prefix">Question</p>
@@ -49,7 +52,26 @@
       </div>
     </div>
   </div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h4>The rules are easy as 1, 2, 3...</h4>
+          <ul>
+            <li>Try and get as many of the 20 questions correct</li>
+            <li>You will have 2 minutes to select the right answer</li>
+            <li>You will also need a pen and paper for any workings</li>
+            <li>Each correct question is worth two marks</li>
+            <li>One mark for each correct answer</li>
+            <li>Another mark for assumed questions working</li>
+            <li>Only your top 5 marks count on the leader board</li>
+            <li>Hope that makes sense, shall we get back to the game?</li>
+          </ul>
+    </div>
+  </div>
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/modal.js"></script>
 </body>
 
 </html>
