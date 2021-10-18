@@ -1,17 +1,21 @@
 //GAME PAGE JS SCRIPT
+
+//constant values
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
+
+//let values 
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
-let availableQuesions = [];
+let availableQuesions = []; //initial blank array
+let questions = []; //initial blank array
 
-let questions = [];
-
+//retrieving questions - credit to James Q on REAMME file
 fetch("assets/js/questions.json")
     .then((res) => {
         return res.json();
@@ -25,16 +29,17 @@ fetch("assets/js/questions.json")
     });
 
 //CONSTANTS
-const CORRECT_BONUS = 2;
-const MAX_QUESTIONS = 20;
+const CORRECT_BONUS = 2; //Setting value to 2 - 1 for answer and 1 for workings
+const MAX_QUESTIONS = 20; //max questions from JSON file - can be changed and extended
 
+//Start of the game retrieving elements and setting values
 startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuesions = [...questions];
     getNewQuestion();
 };
-
+//Checking if questions answered or getting next item from array
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
@@ -45,7 +50,7 @@ getNewQuestion = () => {
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
     //Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
-
+    //updates question and relevant JSON choices linked to question
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
     question.innerText = currentQuestion.question;
@@ -58,7 +63,7 @@ getNewQuestion = () => {
     availableQuesions.splice(questionIndex, 1);
     acceptingAnswers = true;
 };
-
+//Updating question choices
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
         if (!acceptingAnswers) return;
@@ -75,7 +80,7 @@ choices.forEach((choice) => {
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
-
+        //applying delay before next question - so red/green outcome clear
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();

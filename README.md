@@ -179,6 +179,10 @@ The initial web template was cloned from into my GitHub repository:
   * ```git add .```
   * ```git commit -m "relevant comment to changes to the directories and updates"```
   * ```git push``` which updates the relevant GitHub repository based on the GitPod changes.  
+  
+* As of 17/10/21 - 23 commits have been made to GitHub from GitPod using the above commands in terminal:
+<img src="assets/images/README_img/commits_171021.png" width="350px">
+
 * The landing page to the game was named ```index.html``` for deployment and routing purposes.
 * Alot of the testing of code elements were completed locally, using Visual Studio Code and there is an alternative approach to work locally and still update to Github.
   * The following link explains how to clone and work between GitHub and Visual Studio Code on the followings: 
