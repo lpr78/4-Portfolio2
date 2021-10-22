@@ -1,3 +1,4 @@
+//Code learning reference: https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx
 
 //Constant values used on the end page - to be used in the array store
 const username = document.getElementById("username");

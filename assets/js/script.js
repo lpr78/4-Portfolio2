@@ -1,4 +1,5 @@
 //GAME PAGE JS SCRIPT
+//Reference for learning and walkthrough production: https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx
 
 //constant values
 const question = document.getElementById('question');

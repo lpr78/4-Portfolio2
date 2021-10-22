@@ -1,3 +1,5 @@
+//Learning reference for carousel: https://medium.com/@marcusmichaels/how-to-build-a-carousel-from-scratch-in-vanilla-js-9a096d3b98c9
+
 !(function(d){
     // To retrieve carousel items, count how many items, set the slide to 0, and set motion to true which disables interactivity.
     var itemClassName = "carousel__photo";

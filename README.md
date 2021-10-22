@@ -194,6 +194,8 @@ The initial web template was cloned from into my GitHub repository:
 ## Credit and References
 
 ### References
+* Understanding [Flexbox controls](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* Tutoring support and following walkthrough examples for [quiz game](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
 * [Setting up contents page on README file](https://ecotrust-canada.github.io/markdown-toc/)
 * [background image](https://www.vecteezy.com/vector-art/174467-matrix-style-binary-background)
 * [bootstrap modal](https://getbootstrap.com/docs/4.0/components/modal/)
