@@ -5,7 +5,7 @@ var saveScoreBtn = document.getElementById("saveScoreBtn");
 var finalScore = document.getElementById("finalScore");
 var mostRecentScore = localStorage.getItem("mostRecentScore");
 var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-var MAX_HIGH_SCORE = 5;
+const MAX_HIGH_SCORE = 5;
 //Bringing across the latest score from the game
 finalScore.innerText = mostRecentScore;
 //Validation - the user should enter text before saving their score result

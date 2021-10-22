@@ -159,7 +159,7 @@ Example text to showcase the heading and body text:
 ## Features
 
 ## Future Enhancements
-
+* The actual timer was not added to the game and this was a success criteria point that was supposed to be added to the game itself. Further learning required to complete this task in as a learning development point.
 ## Testing Strategy
 * Refer to the following link to see a diarised approach to testing and noterised feedback
   * [Testing Link](TESTING.md)

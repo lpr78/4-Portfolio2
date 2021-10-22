@@ -197,13 +197,13 @@ input::placeholder {
 
 #progressBar {
   width: 20rem;
-  height: 4rem;
+  height: 3.6rem;
   border: 0.4rem solid #faf7f7;
   margin-top: 1.75rem;
 }
 
 #progressBarFull {
-  height: 3.4rem;
+  height: 3.1rem;
   background-color: #faf7f7;
   width: 0%;
 }

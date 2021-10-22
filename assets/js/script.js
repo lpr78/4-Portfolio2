@@ -27,7 +27,7 @@ fetch("assets/js/questions.json")
 //CONSTANTS
 const CORRECT_BONUS = 2; //Setting value to 2 - 1 for answer and 1 for workings
 const MAX_QUESTIONS = 20; //max questions from JSON file - can be changed and extended
-//Start of the game retrieving elements and setting values
+//setting up links to the questions within the json file
 const __spreadArrays = (this && this.__spreadArrays) || function () {
     for (var s = 0, i = 0, il = arguments.length; i < il; i++)
         s += arguments[i].length;
@@ -36,15 +36,29 @@ const __spreadArrays = (this && this.__spreadArrays) || function () {
             r[k] = a[j];
     return r;
 };
+//Start of the game retrieving elements and setting values
 startGame = function () {
     questionCounter = 0;
     score = 0;
     availableQuesions = __spreadArrays(questions);
     getNewQuestion();
 };
+
+//add close button to this section
+closeQuiz = function() {
+    var clicked = false;
+    document.getElementById('closeGame').addEventListener("click", function() {clicked = true});
+    if (clicked = true) 
+    {
+        localStorage.setItem('mostRecentScore', score);
+        //go to the end page
+        return window.location.assign('end.html');
+    }
+}
 //Checking if questions answered or getting next item from array
 getNewQuestion = function () {
-    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) 
+    {
         localStorage.setItem('mostRecentScore', score);
         //go to the end page
         return window.location.assign('end.html');
