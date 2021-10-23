@@ -12,6 +12,11 @@ var score = 0;
 var questionCounter = 0;
 var availableQuesions = []; //initial blank array
 var questions = []; //initial blank array
+var startGame;
+var getNewQuestion;
+var closebutton;
+var incrementScore;
+
 //retrieving questions - credit to James Q on README file
 fetch("assets/js/questions.json")
     .then(function (res) {
@@ -44,20 +49,17 @@ startGame = function () {
     getNewQuestion();
 };
 
-//add close button to this section
-closeQuiz = function() {
-    var clicked = false;
-    document.getElementById('closeGame').addEventListener("click", function() {clicked = true});
-    if (clicked = true) 
-    {
-        localStorage.setItem('mostRecentScore', score);
-        //go to the end page
-        return window.location.assign('end.html');
-    }
-}
+closebutton = function (clicked) {
+    document.getElementById('closeGame').addEventListener("click", function () { clicked = true; });
+    return clicked;
+};
+
 //Checking if questions answered or getting next item from array
 getNewQuestion = function () {
-    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) 
+    //add close button to this section
+    var clicked = false;
+    var closed = closebutton(clicked);
+    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS || closed == true)
     {
         localStorage.setItem('mostRecentScore', score);
         //go to the end page

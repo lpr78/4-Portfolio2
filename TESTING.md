@@ -97,3 +97,39 @@ Reducing the file size of the images has had a positive impact on performance, a
 
 
 [Back to README](README.md)
+
+### Exit Code Issue - 23/10/21 
+
+While adapting the game from user feedback, i encountered an issue with the close button not functioning correctly.
+
+<img src = "assets/images/TESTING_img/Version_1/exit_issue231021.png" width="650px">
+
+After several attempts, i posted a help request on the CodeInstitute | Slack. Awaiting feedback and support.  
+
+## Website Validation Tools
+
+### W3C HTML Validator
+
+### W3C CSS Validator
+
+### JSHint
+I checked JS code on script.js encountered no errors:
+
+<img src = "assets/images/TESTING_img/Version_1/JSHint_script_231021.png" width = "550px">
+
+No errors encountered on the modal.js file:
+
+<img src = "assets/images/TESTING_img/Version_1/JSHint_modal_231021.png" width = "550px">
+
+No errors encountered on the end.js file:
+
+<img src = "assets/images/TESTING_img/Version_1/JSHint_end_231021.png" width = "550px">
+
+No errors encountered on the revision.js file:
+
+<img src = "assets/images/TESTING_img/Version_1/JSHint_revision_231021.png" width = "550px">
+
+
+
+### WAVE Web Accessibility
+
