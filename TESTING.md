@@ -109,8 +109,11 @@ After several attempts, i posted a help request on the CodeInstitute | Slack. Aw
 ## Website Validation Tools
 
 ### W3C HTML Validator
-
+* All 4 of the HTML pages were put through [W3C Markup Validation Service](https://validator.w3.org/#validate_by_upload)
+* No errors/warnings were found in the HTML tags on all pages
 ### W3C CSS Validator
+* All 4 of the HTML pages were put through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
+* No errors/warnings were found in the CSS on all pages tested
 
 ### JSHint
 I checked JS code on script.js encountered no errors:

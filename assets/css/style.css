@@ -136,7 +136,7 @@ input::placeholder {
 }
 
 #footer-container {
-  clear: top;
+  clear: left;
 }
 
 /*Game Page Styles*/
@@ -246,7 +246,7 @@ p {
 
 #game_controls {
   text-align: right;
-  display: inline-flexbox;
+  display: inline-flex;
   padding-bottom: 40px;
 }
 
@@ -258,5 +258,5 @@ p {
 
 i:hover {
   color: #928d8c;
-  text-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.7);
+  text-shadow: 0 0.4rem rgba(255, 255, 255, 0.7);
 }
