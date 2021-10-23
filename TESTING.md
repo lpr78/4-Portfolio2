@@ -108,14 +108,14 @@ After several attempts, i posted a help request on the CodeInstitute | Slack. Aw
 
 ## Website Validation Tools
 
-### W3C HTML Validator
+### W3C HTML Validator - 23/10/21
 * All 4 of the HTML pages were put through [W3C Markup Validation Service](https://validator.w3.org/#validate_by_upload)
 * No errors/warnings were found in the HTML tags on all pages
-### W3C CSS Validator
+### W3C CSS Validator - 23/10/21
 * All 4 of the HTML pages were put through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
 * No errors/warnings were found in the CSS on all pages tested
 
-### JSHint
+### JSHint - 23/10/21
 I checked JS code on script.js encountered no errors:
 
 <img src = "assets/images/TESTING_img/Version_1/JSHint_script_231021.png" width = "550px">
@@ -132,7 +132,17 @@ No errors encountered on the revision.js file:
 
 <img src = "assets/images/TESTING_img/Version_1/JSHint_revision_231021.png" width = "550px">
 
+### WAVE Web Accessibility - 23/10/21
+* Using the WAVE Google Extension, the following elements were highlighted for each page:
+  
+| Index | Game | HighScore | Revision |
+| ---   | ---  | ---       |---  |
+| <img src="assets/images/TESTING_img/Version_1/index_WAVE_231021.png" width = "150px">  | <img src="assets/images/TESTING_img/Version_1/Game_WAVE_231021.png" width = "150px">  |  <img src="assets/images/TESTING_img/Version_1/Score_WAVE_231021.png" width = "150px">       | <img src="assets/images/TESTING_img/Version_1/Revision_WAVE_231021.png" width = "150px">  |
 
+* The largest alert amount was on the revision page - where all the alt tags were the same, i will need to differentiate these going forward, to ensure that any screen value demonstrate further information to the context of the image.
 
-### WAVE Web Accessibility
+### New WAVE Accessibility on the Revision Page - 24/10/21
 
+<img src="assets/images/TESTING_img/Version_1/Revision_WAVE_241021.png" width = "450px">
+
+Further investigation on the Game page also required to ensure WAVE elements are supportive, with the second highest alert amount of 4.
