@@ -8,6 +8,7 @@
 * The game element can be utilised as a starter or plenary activity, testing knowledge at the end of the topic delivery
 * The game itself will be a full graphical user interface which would benefit with a time-based element to mimic the examination time
 * The game would complement working time for the learner to plan their answers, which can also be handed into the teacher, to show workings towards a set of questions
+* A multiple choice element in the game can at least direct the learner to rework their answers, if none of the choices were available. 
 
 
 [[INSERT IMAGE OF RESPONSIVE DISPLAY OF GAME]]
@@ -115,6 +116,9 @@ Mobile application wireframe design using [Balsamiq](https://balsamiq.com/) that
 ## Surface Plane
 
 ### Designs
+From a design perspective, the main focus is the game interactivity and the ability for the user to complete the theory questions promptly.  I completed a mock-up page using GitPod using essential button elements and playing around with the CSS elements to ensure a high contrast demonstrated within the colour strategy section.  
+
+I have chosen high contrast with a dark background and light foreground to ensure that the readability is accessible on mobile devices.  [Material.io](https://material.io/design/color/dark-theme.html) suggests that the different shades of black and light writing contribute to a 'dark theme'.  However, the solid black and soft tonal text colours would be appropriate for the prototype because the intended background has dark grey text for the random binary values.      
 
 #### Background Content
 
@@ -154,12 +158,29 @@ Example text to showcase the heading and body text:
 <img src="assets/images/README_img/font_styles.png" width = "450px">
 
 #### Icons and Characters
+Icons for the game will be retrieved from [Font Awesome](https://fontawesome.com/) and embedded into the relevant DIV element.  In the first instance, i would need to add the following link into the relevant html page (in the header) to ensure the visibility of the icons on display. 
 
+```<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> ```  
 
 ## Features
+* Buttons to navigate through the game from the landing page (index.html) and throughout
+* Modal instructions that support the user in how to play the game
+* Icons to further enhance instructions on game play and exiting the game
+* Count down to allow a timed element to play the game
+* Box selections for the multiple choice quiz
+* Relevant images to show how the answers could be achieved from the question
+* High score board to showcase the top 5 best attempts within the time frame
+* Relevant external links to further resources to support knowledge recall for future game plays
+* High contrast between background and foreground elements
 
 ## Future Enhancements
+The following enhancements would require action, if the JS game were to meet above the PASS criteria or working towards a final release deployment. 
 * The actual timer was not added to the game and this was a success criteria point that was supposed to be added to the game itself. Further learning required to complete this task in as a learning development point.
+* The #progressbarfull does not sit properly in the #progressbar and would need adapting into the final deployment.  More time required to identify how this element can be improved. 
+* Review game play with further interaction, such as a modal appearing with the solution if the question response is incorrect, to reduce the number of clicks.
+* The above suggestion for the modal could also include the relevant external link to the relevant website resource.
+* A graded outcome to inform the user what the equivalent grade would be, based on their attempt.
+* Individualised messages from a JSON file that can support the previous bullet point.
 ## Testing Strategy
 * Refer to the following link to see a diarised approach to testing and noterised feedback
   * [Testing Link](TESTING.md)
