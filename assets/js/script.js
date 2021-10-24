@@ -49,17 +49,18 @@ startGame = function () {
     getNewQuestion();
 };
 
-closebutton = function (clicked) {
-    document.getElementById('closeGame').addEventListener("click", function () { clicked = true; });
-    return clicked;
+//Adding a close function to the cross icon on the game to exit
+closebutton = function () {
+    alert("EXITING QUIZ! \n* Remember Revision is the key to success\n* Please revise next time\n* Try to complete the Binary Quiz next time!");
+    localStorage.setItem('mostRecentScore', score);
+    //go to the end page
+    return window.location.assign('end.html');
 };
 
 //Checking if questions answered or getting next item from array
 getNewQuestion = function () {
     //add close button to this section
-    var clicked = false;
-    var closed = closebutton(clicked);
-    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS || closed == true)
+    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS)
     {
         localStorage.setItem('mostRecentScore', score);
         //go to the end page

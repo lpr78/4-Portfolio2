@@ -104,7 +104,13 @@ While adapting the game from user feedback, i encountered an issue with the clos
 
 <img src = "assets/images/TESTING_img/Version_1/exit_issue231021.png" width="650px">
 
-After several attempts, i posted a help request on the CodeInstitute | Slack. Awaiting feedback and support.  
+### Exit Code Issue (RESOLVED) - 24/10/21
+
+Using a simple onclick on the game exit button and linking to a function, resolved the exit game issue
+
+<img src = "assets/images/TESTING_img/Version_1/exit_issue241021.png" width="650px">
+
+[Back to README](README.md)
 
 ## Website Validation Tools
 
@@ -114,6 +120,8 @@ After several attempts, i posted a help request on the CodeInstitute | Slack. Aw
 ### W3C CSS Validator - 23/10/21
 * All 4 of the HTML pages were put through [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input)
 * No errors/warnings were found in the CSS on all pages tested
+
+[Back to README](README.md)
 
 ### JSHint - 23/10/21
 I checked JS code on script.js encountered no errors:
@@ -132,6 +140,7 @@ No errors encountered on the revision.js file:
 
 <img src = "assets/images/TESTING_img/Version_1/JSHint_revision_231021.png" width = "550px">
 
+[Back to README](README.md)
 ### WAVE Web Accessibility - 23/10/21
 * Using the WAVE Google Extension, the following elements were highlighted for each page:
   
@@ -146,3 +155,5 @@ No errors encountered on the revision.js file:
 <img src="assets/images/TESTING_img/Version_1/Revision_WAVE_241021.png" width = "450px">
 
 Further investigation on the Game page also required to ensure WAVE elements are supportive, with the second highest alert amount of 4.
+
+[Back to README](README.md)
