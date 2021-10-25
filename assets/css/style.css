@@ -254,11 +254,33 @@ p {
 #game_controls>i {
   font-size: 2.8rem;
   padding: 4px;
-  margin-right:5px;
+  margin-right: 5px;
 
 }
 
 i:hover {
-  color: #faf7f781;
-  text-shadow: 0rem 0.2rem rgba(255, 255, 255, 0.5);
+  color: #928d8c;
+  text-shadow: 0rem 0.2rem rgba(255, 255, 255, 0.8);
 }
+
+/*Settings for an iphone 5*/
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+
+  #question,#progressText,.hud-prefix{font-size: 1.8rem;}
+  #question > h2 {margin-bottom: 2rem;}
+  #progressBar{width:15rem;height:3rem;}
+  #progressBarFull{height:2.8rem;}
+  .hud-main-text{font-size: 4.4rem;}
+  #question{text-align: left;}
+  #game_controls>i{margin-top:25px;padding-bottom: 20px;}
+  .choice-prefix{font-size:1.8rem;padding: 1rem 2.5rem;}
+  .choice-text{font-size:1.8rem;padding: 1rem 2.5rem;}
+  .choice-container{height:50px;}
+  #finalScore{text-align: center;}
+  .hud-main-text{font-size: 4rem;}
+  p,li {font-size:1.2rem;text-align: justify;}
+  h1 {font-size: 4rem;text-align: center;}
+  h2 {margin-bottom: 3rem;}
+
+}
+
