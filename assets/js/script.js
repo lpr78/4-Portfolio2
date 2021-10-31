@@ -18,8 +18,8 @@ var getNewQuestion;
 var closebutton;
 var incrementScore;
 
-//Adding todays date in the footer
-document.getElementById("copyright").innerHTML = "Copyright &copy; " + new Date().getFullYear() + " - All Rights Reserved";
+//Adding year in the footer
+document.getElementById("date").innerHTML = (new Date().getFullYear());
 
 //retrieving questions - credit to James Q on README file
 fetch("assets/js/questions.json")
