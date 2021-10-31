@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Binary Revision Quiz | Lets Revise...</title>
   <meta name="description"
     content="Binary Quiz to support learners complete binary calculations as part of the GCSE and A-Level Computer Science qualification">
@@ -18,9 +18,12 @@
 
 <body>
   <!--Add timer: https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz-->
-  <div class="container">
+  <main class="container">
     <div id="game" class="justify-center flex-column">
-      <div id="game_controls"><i class="far fa-question-circle" id="myBtn"></i>  <i class="far fa-window-close" id = "closeGame" onclick="closebutton()"></i></div>
+      <div id="game_controls">
+        <i class="far fa-question-circle" id="myBtn"></i> <i class="far fa-window-close" id="closeGame"
+          onclick="closebutton()"></i>
+      </div>
       <div id="hud">
         <div id="hud-item1">
           <p id="progressText" class="hud-prefix">Question</p>
@@ -51,22 +54,21 @@
         <p class="choice-text" data-number="4">Choice 4</p>
       </div>
     </div>
-  </div>
-  <!-- The Modal -->
+  </main><!-- The Modal -->
   <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
-      <span class="close">&times;</span>
+      <span class="close">×</span>
       <h4>Extra Help for you...</h4>
-          <ul>
-            <li>Remember to have a pen and paper with you</li>
-            <li>Use The pen and paper is to help you with your workings</li>
-            <li>Once you have an answer, does it match with one of the options?</li>
-            <li>You will have 2 minutes to select the right answer</li>
-            <li>Screen display below:</li>
-          </ul>
-          <br>
-          <div><img src = "assets/images/game_instructions.png" alt="instructions on how to use the controls in the quiz"></div>
+      <ul>
+        <li>Remember to have a pen and paper with you</li>
+        <li>Use The pen and paper is to help you with your workings</li>
+        <li>Once you have an answer, does it match with one of the options?</li>
+        <li>You will have 2 minutes to select the right answer</li>
+        <li>Screen display below:</li>
+      </ul><br>
+      <div><img src="assets/images/game_instructions.png" alt="instructions on how to use the controls in the quiz">
+      </div>
     </div>
   </div>
   <script src="assets/js/script.js"></script>

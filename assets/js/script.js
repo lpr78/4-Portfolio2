@@ -6,6 +6,7 @@ const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressBarFull');
+
 var currentQuestion = {};
 var acceptingAnswers = false;
 var score = 0;
@@ -17,22 +18,25 @@ var getNewQuestion;
 var closebutton;
 var incrementScore;
 
+//Adding todays date in the footer
+document.getElementById("copyright").innerHTML = "Copyright &copy; " + new Date().getFullYear() + " - All Rights Reserved";
+
 //retrieving questions - credit to James Q on README file
 fetch("assets/js/questions.json")
     .then(function (res) {
-    return res.json();
-})
+        return res.json();
+    })
     .then(function (loadedQuestions) {
-    questions = loadedQuestions;
-    startGame();
-})
+        questions = loadedQuestions;
+        startGame();
+    })
     .catch(function (err) {
-    console.error(err);
-});
+        console.error(err);
+    });
 //CONSTANTS
 const CORRECT_BONUS = 2; //Setting value to 2 - 1 for answer and 1 for workings
 const MAX_QUESTIONS = 20; //max questions from JSON file - can be changed and extended
-//setting up links to the questions within the json file
+//setting up links to the questions within the json file and ensuring does not go over the question amount (using a count controlled loop)
 const __spreadArrays = (this && this.__spreadArrays) || function () {
     for (var s = 0, i = 0, il = arguments.length; i < il; i++)
         s += arguments[i].length;
@@ -60,8 +64,7 @@ closebutton = function () {
 //Checking if questions answered or getting next item from array
 getNewQuestion = function () {
     //add close button to this section
-    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS)
-    {
+    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //go to the end page
         return window.location.assign('end.html');

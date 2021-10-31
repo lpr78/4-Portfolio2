@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Binary Revision Quiz | Lets Go...</title>
-    <meta name="description"
-    content="Binary Quiz to support learners complete binary calculations as part of the GCSE and A-Level Computer Science qualification">
-<meta name="keywords"
-    content="binary, subtraction, addition, bitwise manipulation, karnaugh map, boolean algebra, boolean simplication, computer science, GCSE, A-Level">
-<meta name="author" content="Luke Price">
-    <link rel="stylesheet" href="assets/css/modal.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  </head>
-  <body>
-    <div class="container">
-      <div id="home" class="flex-center flex-column">
-        <h1>Binary Quiz <i class="fas fa-plus-square"> </i> <i class="fas fa-minus-square"> </i></h1>
-        <a id="myBtn" class="btn btn-default">Instructions</a>
-        <a href="game.html" class="btn btn-default">Play</a>
-        <a href="highscore.html" class="btn btn-default">High Scores</a>
-      </div>
-    </div>
-    <!-- The Modal -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Revision Quiz | Lets Go...</title>
+  <meta name="description" content="Binary Quiz to support learners complete binary calculations as part of the GCSE and A-Level Computer Science qualification">
+  <meta name="keywords" content="binary, subtraction, addition, bitwise manipulation, karnaugh map, boolean algebra, boolean simplication, computer science, GCSE, A-Level">
+  <meta name="author" content="Luke Price">
+  <link rel="stylesheet" href="assets/css/modal.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body onload="todayYear()">
+  <main class="container">
+    <div id="home" class="flex-center flex-column">
+      <h1>Binary Quiz</h1><a id="myBtn" class="btn btn-default">Instructions</a> <a href="game.html" class="btn btn-default">Play</a> <a href="highscore.html" class="btn btn-default">High Scores</a>
+    </div><!-- The Modal -->
     <div id="myModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close">×</span>
         <h4>Remember...</h4>
-            <ul>
-              <li>Try and get as many of the 20 questions correct</li>
-              <li>You will have 2 minutes to select the right answer</li>
-              <li>You will also need a pen and paper for any workings</li>
-              <li>Each correct question is worth two marks</li>
-              <li>One mark for each correct answer</li>
-              <li>Another mark for assumed questions working</li>
-              <li>Only your top 5 marks count on the leader board</li>
-              <li>Get ready to hit <a href = "game.html" id="play_link">Play!</a></li>
-            </ul>
+        <ul>
+          <li>Try and get as many of the 20 questions correct</li>
+          <li>You will have 2 minutes to select the right answer</li>
+          <li>You will also need a pen and paper for any workings</li>
+          <li>Each correct question is worth two marks</li>
+          <li>One mark for each correct answer</li>
+          <li>Another mark for assumed questions working</li>
+          <li>Only your top 5 marks count on the leader board</li>
+          <li>Get ready to hit <a href="game.html" id="play_link">Play!</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <script src="assets/js/modal.js"></script>
-  </body>
+  </main>
+  <footer class="footer">
+    <p id="copyright">0</p>
+  </footer>
+  <script src="assets/js/modal.js"></script>
+</body>
 </html>

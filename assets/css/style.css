@@ -2,7 +2,8 @@
 
 * {
   font-family: 'Noto Sans JP', sans-serif;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: #faf7f7;
@@ -47,15 +48,29 @@ h3 {
   font-weight: 500;
 }
 
+.footer {
+  color: whitesmoke;
+  padding: 1rem 1rem;
+  margin: 20px auto;
+  text-align: center;
+  ;
+  font-size: 2.4rem;
+}
 
 /* Container information to use across all webpages */
 
 .container {
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 80rem;
   margin: 0 auto;
   padding: 2rem;
@@ -66,17 +81,28 @@ h3 {
 }
 
 .flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .flex-center {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .justify-center {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .text-center {
@@ -103,22 +129,33 @@ button {
 
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1rem 0 #928d8c;
+  -webkit-box-shadow: 0 0.4rem 1rem 0 #928d8c;
+          box-shadow: 0 0.4rem 1rem 0 #928d8c;
   color: white;
 }
 
 .btn[disabled]:hover {
   cursor: not-allowed;
-  box-shadow: none;
-  transform: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
 }
 
 /*Any form with a screen*/
 form {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 input {
@@ -127,8 +164,25 @@ input {
   padding: 1.5rem;
   font-size: 1.8rem;
   border: none;
-  box-shadow: 0 0.1rem 1.4rem 0 rgba(250, 247, 247, 0.5);
+  -webkit-box-shadow: 0 0.1rem 1.4rem 0 rgba(250, 247, 247, 0.5);
+          box-shadow: 0 0.1rem 1.4rem 0 rgba(250, 247, 247, 0.5);
   color: rgba(95, 95, 95, 1);
+}
+
+input::-webkit-input-placeholder {
+  color: #928d8c;
+}
+
+input::-moz-placeholder {
+  color: #928d8c;
+}
+
+input:-ms-input-placeholder {
+  color: #928d8c;
+}
+
+input::-ms-input-placeholder {
+  color: #928d8c;
 }
 
 input::placeholder {
@@ -146,6 +200,8 @@ input::placeholder {
 }
 
 .choice-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 0.5rem;
   width: 100%;
@@ -169,7 +225,8 @@ input::placeholder {
 
 .choice-container:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(250, 247, 247, 0.5);
+  -webkit-box-shadow: 0 0.4rem 1.4rem 0 rgba(250, 247, 247, 0.5);
+          box-shadow: 0 0.4rem 1.4rem 0 rgba(250, 247, 247, 0.5);
 }
 
 .correct {
@@ -182,8 +239,12 @@ input::placeholder {
 
 /*Hud = Heads up display*/
 #hud {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hud-prefix {
@@ -223,7 +284,9 @@ input::placeholder {
 }
 
 .high-score:hover {
-  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .modal-body>h4 {
@@ -266,21 +329,73 @@ i:hover {
 /*Settings for an iphone 5*/
 @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
 
-  #question,#progressText,.hud-prefix{font-size: 1.8rem;}
-  #question > h2 {margin-bottom: 2rem;}
-  #progressBar{width:15rem;height:3rem;}
-  #progressBarFull{height:2.8rem;}
-  .hud-main-text{font-size: 4.4rem;}
-  #question{text-align: left;}
-  #game_controls>i{margin-top:25px;padding-bottom: 20px;}
-  .choice-prefix{font-size:1.8rem;padding: 1rem 2.5rem;}
-  .choice-text{font-size:1.8rem;padding: 1rem 2.5rem;}
-  .choice-container{height:50px;}
-  #finalScore{text-align: center;}
-  .hud-main-text{font-size: 4rem;}
-  p,li {font-size:1.2rem;text-align: justify;}
-  h1 {font-size: 4rem;text-align: center;}
-  h2 {margin-bottom: 3rem;}
+  #question,
+  #progressText,
+  .hud-prefix {
+    font-size: 1.8rem;
+  }
+
+  #question>h2 {
+    margin-bottom: 2rem;
+  }
+
+  #progressBar {
+    width: 15rem;
+    height: 3rem;
+  }
+
+  #progressBarFull {
+    height: 2.8rem;
+  }
+
+  .hud-main-text {
+    font-size: 4.4rem;
+  }
+
+  #question {
+    text-align: left;
+  }
+
+  #game_controls>i {
+    margin-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .choice-prefix {
+    font-size: 1.8rem;
+    padding: 1rem 2.5rem;
+  }
+
+  .choice-text {
+    font-size: 1.8rem;
+    padding: 1rem 2.5rem;
+  }
+
+  .choice-container {
+    height: 50px;
+  }
+
+  #finalScore {
+    text-align: center;
+  }
+
+  .hud-main-text {
+    font-size: 4rem;
+  }
+
+  p,
+  li {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 3rem;
+  }
 
 }
-

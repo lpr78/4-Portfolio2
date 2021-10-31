@@ -17,27 +17,32 @@
 
 ## Table of Content
 
-* [Strategic Plane](#strategic-plane)
-  + [Purpose](#purpose)
-  + [User Stories](#user-stories)
-* [Scope Plane](#scope-plane)
-* [Structure Plane](#structure-plane)
-  + [Opportunities](#opportunities)
-* [Skeleton Plane](#skeleton-plane)
-  + [Wireframe](#wireframe)
-* [Surface Plane](#surface-plane)
-  + [Designs](#designs)
-    - [Background Content](#background-content)
-    - [Colour Strategy](#colour-strategy)
-    - [Typography](#typography)
-    - [Icons and Characters](#icons-and-characters)
-* [Features](#features)
-* [Future Enhancements](#future-enhancements)
-* [Testing Strategy](#testing-strategy)
-* [Deployment Strategy](#deployment-strategy)
-* [Credit and References](#credit-and-references)
-  + [Credit](#credit)
-  + [References](#references)
+- [Binary Manipulation and Simplication Game](#binary-manipulation-and-simplication-game)
+  - [Introduction](#introduction)
+  - [Table of Content](#table-of-content)
+  - [Strategic Plane](#strategic-plane)
+    - [Purpose](#purpose)
+    - [User Stories](#user-stories)
+  - [Scope Plane](#scope-plane)
+    - [Planned Features](#planned-features)
+  - [Structure Plane](#structure-plane)
+    - [Opportunities](#opportunities)
+  - [Skeleton Plane](#skeleton-plane)
+    - [Wireframe](#wireframe)
+  - [Surface Plane](#surface-plane)
+    - [Designs](#designs)
+      - [Background Content](#background-content)
+      - [Colour Strategy](#colour-strategy)
+      - [Typography](#typography)
+      - [Icons and Characters](#icons-and-characters)
+  - [Features](#features)
+  - [Future Enhancements](#future-enhancements)
+  - [Testing Strategy](#testing-strategy)
+  - [Further considerations](#further-considerations)
+  - [Deployment Strategy](#deployment-strategy)
+  - [Credit and References](#credit-and-references)
+    - [References](#references)
+    - [Credit](#credit)
 
 ## Strategic Plane
 ### Purpose
@@ -185,7 +190,11 @@ The following enhancements would require action, if the JS game were to meet abo
 * Refer to the following link to see a diarised approach to testing and noterised feedback
   * [Testing Link](TESTING.md)
 
-
+## Further considerations
+* I would like to address the timing criteria on the game.  At present (with current time constraints) this has not been achieved.
+* Further time i feel that this would be a good addition to the quiz game to ensure that it progresses to the next question automatically after 2 minutes if not answered.
+* The width of the #ProgressBarFull does not perfectly inside of the #ProgressBar and further consideration of this is preferred, if more time permitted.
+* The size of the help modal image is too small on mobile view and therefore needs consideration, in terms of increasing the size in order to fulfill the success criteria. 
 
 
 ## Deployment Strategy

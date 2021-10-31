@@ -22,7 +22,9 @@ saveHighScore = function (e) {
     //Pushing the score into the array
     highScores.push(score);
     //Sorting the array in descending order (high first)
-    highScores.sort(function (a, b) { return b.score - a.score; });
+    highScores.sort(function (a, b) {
+        return b.score - a.score;
+    });
     //Keeps maximum splice to only 5 text entries to prevent clogging up the page with all results
     highScores.splice(5);
     localStorage.setItem('highScores', JSON.stringify(highScores));
