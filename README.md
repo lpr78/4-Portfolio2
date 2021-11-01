@@ -10,10 +10,7 @@
 * The game would complement working time for the learner to plan their answers, which can also be handed into the teacher, to show workings towards a set of questions
 * A multiple choice element in the game can at least direct the learner to rework their answers, if none of the choices were available. 
 
-
-[[INSERT IMAGE OF RESPONSIVE DISPLAY OF GAME]]
-
-* Link to view final game via GitHub. 
+* Link to view final game via [GitHub repository](https://github.com/lpr78/4-Portfolio2) and [live site](https://lpr78.github.io/4-Portfolio2/). 
 
 ## Table of Content
 
@@ -191,10 +188,12 @@ The following enhancements would require action, if the JS game were to meet abo
   * [Testing Link](TESTING.md)
 
 ## Further considerations
-* I would like to address the timing criteria on the game.  At present (with current time constraints) this has not been achieved.
-* Further time i feel that this would be a good addition to the quiz game to ensure that it progresses to the next question automatically after 2 minutes if not answered.
+* I would like to address the timing criteria on the game.  At present (with current time constraints) this has not been achieved resetting on each question, it merely resets the time.
+* Further time i feel that the timer element controls and alerts would be better as a modal with advice video links and then a buttons to progress to the next question would be a good addition to the quiz game to ensure that when the modal button is clicked => it progresses to the next question automatically after 2 minutes if not answered.
 * The width of the #ProgressBarFull does not perfectly inside of the #ProgressBar and further consideration of this is preferred, if more time permitted.
 * The size of the help modal image is too small on mobile view and therefore needs consideration, in terms of increasing the size in order to fulfill the success criteria. 
+* I feel that the modal solutions would be better placed as a flex-box div display that is shown when on an iphone width
+* The game itself is by no means perfect and further consideration to the test user and grammatical checking would help identify further updates, such as increasing the size of the timer element on the game page itself.   
 
 
 ## Deployment Strategy

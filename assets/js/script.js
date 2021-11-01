@@ -52,6 +52,12 @@ startGame = function () {
     availableQuesions = __spreadArrays(questions);
     getNewQuestion();
 };
+//Setting up the 2 minute timer
+window.onload = function () {
+    var twoMins = 60 * 2,
+        display = document.querySelector('#timeLeft');
+    startTimer(twoMins, display);
+};
 
 //Adding a close function to the cross icon on the game to exit
 closebutton = function () {
@@ -61,6 +67,24 @@ closebutton = function () {
     return window.location.assign('end.html');
 };
 
+//Running the two minute timer
+function startTimer(duration, display) { //Bringing in the twoMin and display as a parameter/argument
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            alert('You should have completed the question by now\nSee if you are quicker next time!')
+            timer = duration;
+        }
+    }, 1000);
+}
 //Checking if questions answered or getting next item from array
 getNewQuestion = function () {
     //add close button to this section
