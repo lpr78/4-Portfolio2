@@ -297,13 +297,13 @@ p {
   font-size: 1.8rem;
 }
 
-#play_link {
+.play_link {
   text-decoration: none;
   color: white;
   font-weight: 700;
 }
 
-#play_link:hover {
+.play_link:hover {
   color: #928d8c;
 }
 
@@ -326,7 +326,10 @@ i:hover {
 }
 
 /*Settings for an iphone 5*/
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+@media (max-height : 568px) 
+and (max-width : 320px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation : portrait) {
 
   #question,
   #progressText,

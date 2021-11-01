@@ -241,6 +241,7 @@ The initial web template was cloned from into my GitHub repository:
 * [GitPod README Assist](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * Optimisation of PNG images from [TinyPNG](https://tinypng.com/)
 * Binary [Favicon](https://www.favicon.cc/?action=icon&file_id=258253)
+* [Timer Element for Quiz](https://stackoverflow.com/questions/44314897/javascript-timer-for-a-quiz)
 * Checks of validity and accessibility of coding elements: [W3C HTML Validator](https://validator.w3.org/), [W3c CSS Validator](https://validator.w3.org/) and [JSHint](https://jshint.com/)
 
 ### Credit
